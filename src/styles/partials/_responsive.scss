@@ -1,0 +1,128 @@
+@media (max-width: 600px) {
+    .hero-frame {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 4em;
+    }
+
+    #menu {
+        padding: 2em 0;
+
+        .menu-title {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        .menu-patates {
+            top: 6%;
+            --patate-base: 5.5vh;
+            --patate-1-w: 7.5vh;
+            --patate-3-w: 7.5vh;
+            --patate-5-w: 4vh;
+            --patate-6-w: 3vh;
+            --patate-7-w: 3.6vh;
+            --patate-9-w: 3vh;
+            --p1-left: 2.5vh;
+            --p2-right: 3vh;
+            --p2-top: -1vh;
+            --p3-right: -1.8vh;
+            --p3-top: -0.5vh;
+            --p4-right: -5vh;
+            --p5-right: 4.5vh;
+            --p5-top: -1.3vh;
+            --p6-right: 1.2vh;
+            --p6-top: 3.5vh;
+            --p7-left: 5vh;
+            --p7-top: -0.5vh;
+            --p8-right: 4vh;
+            --p8-top: 1vh;
+            --p9-left: 6vh;
+            --p9-top: 4vh;
+        }
+    }
+
+    .menu-section {
+        padding: 3.6rem 1.4rem 0 1.4rem;
+        header h3 {
+            font-size: 1.3em;
+        }
+    }
+    .menu-grid{
+        .menu-card h4{
+            font-size:1.2em;
+        }
+        .menu-price{
+            font-size: 1.1em;
+        }
+    }
+
+    .menu-list {
+        font-size: 1.2em;
+    }
+
+    .price-combo {
+        gap: 3vw;
+    }
+
+    .menu-icon {
+        width: 20px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links li:not(:last-child) {
+        display: none;
+    }
+
+    .footer-info {
+        gap: 2rem;
+    }
+
+    .menu-corner-badge {
+        margin: auto;
+    }
+
+    .menu-corner-badge img {
+        width: 5.5vh;
+    }
+    .stickers {
+        .sticker{
+            &:nth-child(1){
+                left: 50%;
+                width: 12vh;
+                bottom:6%;
+            }
+            &:nth-child(2){
+                left: 45%;
+                width: 13vh;
+                bottom:14%;
+            }
+            &:nth-child(3){
+                left: 20%;
+                width: 10vh;
+                bottom:50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-brand{
+        font-size:1em;
+    }
+    .nav-links .btn-menu{
+        font-size: 0.6em;
+    }
+
+    .nav-logo-icon img{
+        width:22px;
+    }
+
+    .hero-title {
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,277 @@
+#menu {
+    padding: 6rem 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu-root {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    position: relative;
+
+    :where(h2, h3, h4, p, li, span) {
+        text-shadow: 3px 3px 0 var(--teal);
+    }
+}
+
+.menu-hero {
+    display: grid;
+    gap: 0.6rem;
+    text-align: center;
+    border-radius: 18px;
+
+    .menu-title {
+        font-family: "Cyrillic Bodoni Condensed", "auto";
+        font-size: 7em;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin: 0 0 10vh 0;
+    }
+
+    .menu-subtitle {
+        font-family: 'Bodoni Moda', serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 1.1rem;
+        color: rgba(42, 26, 10, 0.7);
+    }
+
+    .menu-patates {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        --patate-base: 5.5vw;
+        --patate-1-w: 7.5vw;
+        --patate-3-w: 7.5vw;
+        --patate-5-w: 4vw;
+        --patate-6-w: 3vw;
+        --patate-7-w: 3.6vw;
+        --patate-9-w: 3vw;
+        --p1-left: 2.5vw;
+        --p2-right: 3vw;
+        --p2-top: -1vw;
+        --p3-right: -1.8vw;
+        --p3-top: -0.5vw;
+        --p4-right: -5vw;
+        --p5-right: 4.5vw;
+        --p5-top: -1.3vw;
+        --p6-right: 1.2vw;
+        --p6-top: 3.5vw;
+        --p7-left: 5vw;
+        --p7-top: -0.5vw;
+        --p8-right: 4vw;
+        --p8-top: 1vw;
+        --p9-left: 6vw;
+        --p9-top: 4vw;
+
+        img {
+            width: var(--patate-base);
+            height: auto;
+            object-fit: contain;
+            position: absolute;
+
+            &:nth-child(1) {
+                left: var(--p1-left);
+                width: var(--patate-1-w);
+            }
+
+            &:nth-child(2) {
+                right: var(--p2-right);
+                transform: rotate(75deg);
+                top: var(--p2-top);
+            }
+
+            &:nth-child(3) {
+                right: var(--p3-right);
+                width: var(--patate-3-w);
+                transform: rotate(-5deg);
+                top: var(--p3-top);
+            }
+
+            &:nth-child(4) {
+                right: var(--p4-right);
+                transform: rotate(119deg);
+            }
+
+            &:nth-child(5) {
+                right: var(--p5-right);
+                transform: rotate(293deg);
+                top: var(--p5-top);
+                width: var(--patate-5-w);
+            }
+
+            &:nth-child(6) {
+                right: var(--p6-right);
+                top: var(--p6-top);
+                width: var(--patate-6-w);
+            }
+
+            &:nth-child(7) {
+                left: var(--p7-left);
+                top: var(--p7-top);
+                width: var(--patate-7-w);
+            }
+
+            &:nth-child(8) {
+                right: var(--p8-right);
+                transform: rotate(-84deg);
+                z-index: -1;
+                top: var(--p8-top);
+            }
+
+            &:nth-child(9) {
+                left: var(--p9-left);
+                transform: matrix3d(0, 1, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+                width: var(--patate-9-w);
+                top: var(--p9-top);
+            }
+        }
+    }
+}
+
+.menu-section {
+    display: grid;
+    gap: 1.2rem;
+    padding: 2rem 2.2rem;
+    border-radius: 16px;
+
+    >header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+
+        h3 {
+            font-family: 'Sceageus', "auto";
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+    }
+}
+
+.menu-price {
+    font-family: 'Sceageus', "auto";
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--text-dark);
+}
+
+.price-combo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.menu-grid {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.menu-card {
+    display: grid;
+    gap: 0.8rem;
+    padding: 1.4rem 1.5rem;
+    border-left: 2px solid var(--teal-dark);
+
+    >header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.6rem;
+    }
+
+    h4 {
+        font-family: 'Sceageus', "auto";
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 1.5rem;
+    }
+}
+
+.menu-list {
+    list-style: none;
+    display: grid;
+    font-family: "Cyrillic Bodoni Condensed", "auto";
+    font-size: 1.3rem;
+    color: rgba(42, 26, 10, 0.85);
+
+    li::before {
+        content: "-";
+        color: var(--teal-dark);
+        margin-right: 0.4rem;
+    }
+}
+
+.menu-description {
+    font-family: "Cyrillic Bodoni Condensed", "auto";
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgba(42, 26, 10, 0.8);
+}
+
+.menu-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    filter: hue-rotate(75deg);
+}
+
+.menu-corner-badge {
+    align-self: flex-end;
+    margin-top: 1rem;
+
+    img {
+        width: 3.5vw;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.stickers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .sticker {
+        position: absolute;
+        width: 5vw;
+        aspect-ratio: 1/1;
+        z-index: -1;
+
+        &:nth-child(1) {
+            left: 65%;
+            width: 8vw;
+            opacity: 0.5;
+            bottom: 13%;
+            transform: rotate(20deg);
+        }
+
+        &:nth-child(2) {
+            left: -2%;
+            width: 9vw;
+            opacity: 0.4;
+            bottom: 8%;
+            transform: rotate(-10deg);
+        }
+
+        &:nth-child(3) {
+            left: -5%;
+            width: 7vw;
+            opacity: 0.4;
+            bottom: 45%;
+            transform: rotate(-10deg);
+        }
+    }
+}

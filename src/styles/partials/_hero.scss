@@ -1,0 +1,117 @@
+#accueil {
+    min-height: 100vh;
+    background: var(--teal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#accueil::before,
+#accueil::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.12;
+    background: var(--vanilla);
+}
+
+#accueil::before {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    left: -200px;
+}
+
+#accueil::after {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    right: -100px;
+}
+
+.hero-frame {
+    border: 6px solid var(--vanilla);
+    border-radius: 14px;
+    text-align: center;
+    max-width: fit-content;
+    padding: 5vh 3vw 8vh 3vw;
+    width: 100%;
+    position: relative;
+    animation: fadeUp 0.9s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-family: 'Sceageus', "auto";
+    font-size: 7em;
+    color: var(--vanilla);
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    margin: 0 auto 0.6rem auto;
+    width: fit-content;
+}
+
+.hero-tagline {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    font-size: clamp(1rem, 2vw, 1rem);
+    color: var(--vanilla);
+    text-transform: uppercase;
+    opacity: 0.85;
+    width: fit-content;
+    margin: auto auto 2.5rem auto;
+}
+
+.hero-frame hr {
+    border: 1px solid var(--vanilla);
+    width: 60px;
+    height: 2px;
+    opacity: 0.5;
+    margin: 0 auto 2rem;
+}
+
+.hero-frame p {
+    font-family: 'DM Serif Display', serif;
+    color: var(--vanilla);
+    line-height: 1.75;
+    opacity: 0.92;
+    max-width: 500px;
+    margin: 0 auto 2.5rem;
+}
+
+.hero-cta {
+    display: inline-block;
+    background: var(--vanilla);
+    color: var(--teal);
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    padding: 14px 36px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}

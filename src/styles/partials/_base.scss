@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Sceageus';
+    src: url('/fonts/Sceageus.otf') format('opentype');
+    src: url('/fonts/Sceageus.woff') format('woff');
+    src: url('/fonts/Sceageus.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cyrillic Bodoni Condensed";
+    src: url("/fonts/Cyrillic Bodoni Condensed.woff2") format("woff2");
+}
+
+:root {
+    --hr: #f9b233;
+    --teal: #7fe6e3;
+    --vanilla: #ffe7c2;
+    --teal-dark: #5ccfcc;
+    --vanilla-dark: #f0c898;
+    --text-dark: #2a1a0a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--vanilla);
+    color: var(--text-dark);
+    font-family: 'Bodoni Moda', 'Georgia', serif;
+    overflow-x: hidden;
+}

@@ -1,0 +1,68 @@
+footer {
+    background: var(--text-dark);
+    color: var(--vanilla);
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    color: var(--teal);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.3rem;
+}
+
+.footer-tagline {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    color: var(--teal);
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-block h4 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: var(--teal);
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+.footer-block p,
+.footer-block a {
+    font-family: 'DM Serif Display', serif;
+    color: var(--vanilla);
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.footer-block a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    border-top: 1px solid rgba(255, 231, 194, 0.1);
+    padding-top: 1.5rem;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--vanilla);
+    opacity: 0.3;
+}

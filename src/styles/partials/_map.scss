@@ -1,0 +1,32 @@
+.map-bar {
+    background: var(--vanilla-dark);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-top: 2px solid var(--teal);
+    border-bottom: 2px solid var(--teal);
+}
+
+.map-bar a {
+    color: var(--teal-dark);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.2s;
+    font-size: 1rem;
+}
+
+.map-bar a:hover {
+    opacity: 0.7;
+}
+
+.map-bar svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--teal-dark);
+}

@@ -1,0 +1,67 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 58px;
+    border-bottom: 2px solid var(--vanilla);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.nav-logo-icon img {
+    width: 38px;
+    aspect-ratio: 1 / 1;
+}
+
+.nav-brand {
+    font-family: 'Sceageus', "auto";
+    font-size: 1.7em;
+    color: var(--vanilla);
+    letter-spacing: 0.08em;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--vanilla);
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.nav-links .btn-menu {
+    background: var(--vanilla);
+    color: var(--teal);
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.nav-links .btn-menu:hover {
+    opacity: 0.85;
+}

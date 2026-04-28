@@ -1,0 +1,47 @@
+.social-bar {
+    background: var(--teal);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.social-bar h3 {
+    font-family: 'Abril Fatface', cursive;
+    color: var(--vanilla);
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.04em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--vanilla);
+    color: var(--teal-dark);
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 30px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+}
