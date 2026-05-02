@@ -43,9 +43,11 @@ const sweetsItems = [
     name: 'Green Delight',
     price: '7.50€',
     items: [
-      'Patata milk à la vanille de Madagascar',
-      'Matcha',
-      "Confiture de lait à l'ube & praliné noisette",
+      'Beignet de pomme de terre',
+      'Coeur coulant pistache',
+      'Chantilly à la vanille de Madagascar',
+      'Poudre de matcha',
+      'Eclats de pistache',
     ],
   }
 ];
@@ -56,11 +58,9 @@ const icedMilksItems = [
     price: '9.50€',
     icon: '/img/vegan.svg',
     items: [
-      'Beignet de pomme de terre',
-      'Coeur coulant pistache',
-      'Chantilly à la vanille de Madagascar',
-      'Poudre de matcha',
-      'Eclats de pistache',
+      'Patata milk à la vanille de Madagascar',
+      'Matcha',
+      "Confiture de lait à l'ube & praliné noisette",
     ],
   },
   {
