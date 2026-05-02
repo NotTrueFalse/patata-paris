@@ -58,19 +58,19 @@ const icedMilksItems = [
     price: '9.50€',
     icon: '/img/vegan.svg',
     items: [
-      'Patata milk à la vanille de Madagascar',
-      'Matcha',
-      "Confiture de lait à l'ube & praliné noisette",
+      'Patata milk infusé à froid au thé Earl Grey',
+      'Huile essentielle de bergamote',
+      'Sirop de violette',
+      'Fleur de pensée',
     ],
   },
   {
     name: "L'Archipel",
     price: '8.60€',
     items: [
-      'Patata milk infusé à froid au thé Earl Grey',
-      'Huile essentielle de bergamote',
-      'Sirop de violette',
-      'Fleur de pensée',
+      'Patata milk à la vanille de Madagascar',
+      'Matcha',
+      "Confiture de lait à l'ube & praliné noisette",
     ],
   },
 ];
@@ -82,15 +82,15 @@ export default function MenuDeobfReact() {
         <h2 className="menu-title">Menu</h2>
         <p className="menu-subtitle">Patatas Signature • Sweets • Iced Milks</p>
         <div className="menu-patates" aria-hidden="true">
-          <img src="/img/patate_1.png" alt="patate" />
-          <img src="/img/patate_2.png" alt="patate" />
+          <img src="/img/patate_1.webp" alt="patate" />
+          <img src="/img/patate_2.webp" alt="patate" />
           <img src="/img/patate_3.svg" alt="patate" />
-          <img src="/img/patate_4.png" alt="patate" />
-          <img src="/img/fleur_1.png" alt="fleur" />
-          <img src="/img/fleur_2.png" alt="fleur" />
-          <img src="/img/fleur_3.png" alt="fleur" />
-          <img src="/img/feuille_1.png" alt="feuille" />
-          <img src="/img/feuille_2.png" alt="feuille" />
+          <img src="/img/patate_4.webp" alt="patate" />
+          <img src="/img/fleur_1.webp" alt="fleur" />
+          <img src="/img/fleur_2.webp" alt="fleur" />
+          <img src="/img/fleur_3.webp" alt="fleur" />
+          <img src="/img/feuille_1.webp" alt="feuille" />
+          <img src="/img/feuille_2.webp" alt="feuille" />
         </div>
       </header>
 
@@ -201,7 +201,7 @@ export default function MenuDeobfReact() {
       </section>
 
       <div className="menu-corner-badge">
-        <img src="/img/gluten-free.png" alt="Sans gluten" />
+        <img src="/img/gluten-free.webp" alt="Sans gluten" />
       </div>
       <div className="stickers">
         <img src="/img/jus.svg" alt="jus" className="sticker" />

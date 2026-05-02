@@ -15,7 +15,7 @@ document.addEventListener("keydown", (e) => {
     keys += key;
     if (keys == code) {
         let img = document.createElement("img");
-        img.src = `/img/${keys.repeat(3)}.jpg`;
+        img.src = `/img/${keys.repeat(3)}.webp`;
         document.body.appendChild(img);
         img.style = `position:fixed;
         top: 50%;
