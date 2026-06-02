@@ -7,9 +7,9 @@ export default function SocialBar() {
     <div className="social-bar">
       <h3>Retrouve-nous</h3>
       <div className="social-links">
-        <a className="social-link" href="https://www.instagram.com/patata_paris" target="_blank" rel="noopener">
+        <a className="social-link" href="https://www.instagram.com/patata.paris" target="_blank" rel="noopener">
           <img src={instagramIcon} alt="Instagram" className="icon-svg" />
-          @patata_paris
+          @patata.paris
         </a>
         <a className="social-link" href="https://www.tiktok.com/@patata.paris" target="_blank" rel="noopener">
           <img src={tiktokIcon} alt="TikTok" className="icon-svg" />
